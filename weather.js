@@ -13,8 +13,8 @@ form.addEventListener("submit", (event)=>{
 const getWeatherDataFromApi = async() =>{
     let apiKey = DecryptStringAES(localStorage.getItem("apiKey"));
     let inputVal = input.value;
-    let units = "metric";
-    let lang = "tr";
+    let units = "imperial";
+    let lang = "en";
     //////////// let mode = "xml";
     // alert("apiKey : " + apiKey);
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${inputVal}&appid=${apiKey}&units=${units}&lang=${lang}`;
@@ -50,7 +50,7 @@ const getWeatherDataFromApi = async() =>{
             <span>${name}</span>
             <sup>${sys.country}</sup>
         </h2>
-        <div class="city-temp">${Math.round(main.temp)}<sup>°C</sup></div>
+        <div class="city-temp">${Math.round(main.temp)}<sup>°F</sup></div>
         <figure>
             <img class="city-icon" src="${iconUrl}">
             <figcaption>${weather[0].description}</figcaption>
