@@ -111,7 +111,7 @@
   }
   
   .top-banner form button:hover {
-    background: var(--darkred);
+    background: var(--red);
   }
   
   .top-banner form .msg {
