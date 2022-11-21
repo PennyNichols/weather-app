@@ -2,11 +2,11 @@
 /* RESET STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 :root {
-    --bg_main: #0c6396;
-    --text_light: #fff;
+    --bg_main: #7b5491;
+    --text_light: rgb(233, 233, 233);
     --text_med: #53627c;
     --text_dark: #1e2432;
-    --red: #ff1e42;
+    --red: #682280;
     --darkred: #c3112d;
     --orange: #ff8c00;
   }
@@ -43,6 +43,8 @@
     display: block;
     max-width: 100%;
     height: auto;
+    margin-top: 50px;
+    margin-bottom: 25px;
   }
   
   ul {
@@ -71,6 +73,7 @@
   }
   
   .heading {
+    margin: 50px auto 100px auto;
     font-weight: bold;
     font-size: 4rem;
     letter-spacing: 0.02em;
@@ -81,6 +84,7 @@
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: center;
   }
   
   .top-banner form input {
@@ -88,6 +92,7 @@
     height: 40px;
     padding: 5px 5px 10px;
     border-bottom: 1px solid;
+    text-align: center;
   }
   
   .top-banner form input::placeholder {
